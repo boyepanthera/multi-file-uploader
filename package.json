@@ -1,0 +1,14 @@
+{
+  "name": "multi-cloudinary",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Olanrewaju Olaboye",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cloudinary": "^1.25.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
