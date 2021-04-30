@@ -4,7 +4,7 @@
   "main": "server.js",
   "author": "Olanrewaju Olaboye",
   "scripts": {
-"start" : "node -r esm server.js",
+    "start": "node -r esm server.js",
     "dev": "nodemon -r esm server.js"
   },
   "license": "MIT",
