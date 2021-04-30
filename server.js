@@ -39,6 +39,7 @@ app.post("/images", upload.array("pictures", 10), async (req, res) => {
     let pictureFiles = req.files;
     if (!pictureFiles)
       return res.status(400).json({ message: "No picture attached!" });
+    //map through images and create a promise array using cloudinary upload function
     let multiplePicturePromise = pictureFiles.map((picture) =>
       cloudinary.v2.uploader.upload(picture.path)
     );
