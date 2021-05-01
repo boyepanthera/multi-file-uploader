@@ -4,6 +4,7 @@ import multer from "multer";
 import dotenv from "dotenv";
 dotenv.config();
 const app = express();
+app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const {
